@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style>
+        body {
+            font-size: 17px;
+            font-family: Helvetica, sans-serif;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000000 solid;
+            margin-bottom: 10px;
+        }
+
+        #container {
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        li {
+            list-style: square;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        jQuery Learning
+    </h1>
+</header>
+
+<div id="container">
+    <h1 id="heading1">
+        Heading One
+    </h1>
+    <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A alias commodi
+        consequuntur debitis dicta exercitationem <span>dicta</span>impedit, iste labore laborum
+        minima minus nulla numquam odit perferendis quaerat quas tempora tenetur
+        voluptates.
+    </p>
+
+    <h1 id="heading2">
+        Heading Two
+    </h1>
+    <p class="para2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem,
+        earum esse incidunt, iure libero nihil <span>nostrum ratione</span> reprehenderit
+        tenetur ullam velit voluptatum? Doloremque enim iusto quas tempora voluptatem! Ab,
+        tempore?
+    </p>
+
+    <div id="buttons">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+    </div>
+
+    <div>
+        <h1>List</h1>
+        <ul id="list">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+    </div>
+
+    <a href="http://www.google.com">Google</a>
+
+    <script>
+        //        $("h1#heading2").hide()
+        //        $('p span').css('color', 'red');
+        //        $('ul#list li:first').css('font-size', '28px')
+        $('ul#list li:nth-child(odd)').css('background-color', '#ccc');
+        //        $('ul#list li:even').css('background-color', '#888');
+        $('ul#list li:nth-child(even)').css('color', 'red');
+        $('.btn-success').hide();
+        $('[href]').css('color', 'red');ss
+    </script>
+</div>
+</body>
+</html>
